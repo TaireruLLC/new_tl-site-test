@@ -1,6 +1,6 @@
 window.onload = function() {
     const drop = document.getElementById('water-drop');
-    const menu = document.getElementById('menu');
+    const contentContainer = document.getElementById('content-container');
 
     // Step 1: Initial drop animation using GSAP
     gsap.fromTo(drop, 
@@ -25,18 +25,17 @@ window.onload = function() {
         });
     }
 
-    // Step 3: Function to load 'gome.html' content
+    // Step 3: Function to load 'about.html' content
     function loadContent() {
-        // Use XMLHttpRequest to fetch 'home.html'
         const xhr = new XMLHttpRequest();
-        xhr.open('GET', 'home.html', true);
+        xhr.open('GET', 'about.html', true);
         xhr.onreadystatechange = function() {
             if (xhr.readyState === 4 && xhr.status === 200) {
-                // Replace the current content with the new content
-                menu.innerHTML = xhr.responseText;
+                // Load the new content into content-container
+                contentContainer.innerHTML = xhr.responseText;
 
-                // Step 4: Fade in the new content over the expanded drop
-                gsap.to(menu, { opacity: 1, duration: 1 });
+                // Step 4: Fade in the new content
+                gsap.to(contentContainer, { opacity: 1, duration: 1 });
             }
         };
         xhr.send();
