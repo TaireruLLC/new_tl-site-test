@@ -1,7 +1,6 @@
 window.onload = function() {
     const drop = document.getElementById('water-drop');
-    const contentContainer = document.getElementById('content-container');
-
+    
     // Step 1: Initial drop animation using GSAP
     gsap.fromTo(drop, 
         { y: -100, scale: 1 },  // Start above screen and small
@@ -21,21 +20,22 @@ window.onload = function() {
             scaleY: 50,  // Stretch the drop vertically
             duration: 1.5,  // Duration of the fill
             ease: "power2.inOut",
-            onComplete: loadContent  // Load the content after fill
+            onComplete: loadHomePage  // Load the home page after fill
         });
     }
 
     // Step 3: Function to load 'home.html' content
-    function loadContent() {
+    function loadHomePage() {
         const xhr = new XMLHttpRequest();
         xhr.open('GET', 'home.html', true);
         xhr.onreadystatechange = function() {
             if (xhr.readyState === 4 && xhr.status === 200) {
-                // Load the new content into content-container
-                contentContainer.innerHTML = xhr.responseText;
+                // Replace the entire body content with the loaded content
+                document.open();
+                document.write(xhr.responseText);
+                document.close();
 
-                // Step 4: Fade in the new content
-                gsap.to(contentContainer, { opacity: 1, duration: 1 });
+                // Optionally: reinitialize any scripts or animations after loading the new page
             }
         };
         xhr.send();
