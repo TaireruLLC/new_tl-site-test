@@ -1,0 +1,161 @@
+/**
+ * Taireru LLC PROPRIETARY AND CONFIDENTIAL INFORMATION SUBJECT TO NDA
+ * Copyright © 2024 Taireru LLC.
+ * All Rights Reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Taireru LLC.  The intellectual and technical concepts contained
+ * herein are proprietary to Taireru LLC. and may be covered by U.S. and Foreign Patents,
+ * patent applications, and are protected by trade secret or copyright law.
+ * Dissemination of this information, reproduction of this material, and copying or distribution of this software
+ * is strictly forbidden unless prior written permission is obtained
+ * from Taireru LLC.
+ */
+body {
+    background-color: #1c1c1c;
+    color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+}
+header h1 {
+    margin: 0;
+    color: #ffffff;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+}
+nav a {
+    padding: 15px 25px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+nav a:hover {
+    background-color: #555;
+}
+.container {
+    padding: 20px;
+}
+.apps .game {
+    margin-bottom: 20px;
+}
+.apps .game h2 {
+    color: #f0f0f0;
+    font-size: 24px;
+}
+.apps .game h3 {
+    color: #f0f0f0;
+    font-size: 13px;
+}
+.apps .game p {
+    color: #cccccc;
+}
+.apps .game a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #666;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.apps .game a:hover {
+    background-color: #777;
+}
+.apps .app {
+    margin-bottom: 20px;
+}
+.apps .app h2 {
+    color: #f0f0f0;
+    font-size: 24px;
+}
+.apps .app h3 {
+    color: #f0f0f0;
+    font-size: 13px;
+}
+.apps .app p {
+    color: #cccccc;
+}
+.apps .app a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #666;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.apps .app a:hover {
+    background-color: #777;
+}
+.tml-help a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #666;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.tml-help  a:hover {
+    background-color: #777;
+}
+footer {
+    background-color: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+.logo {
+    width: 100px;
+    margin-top: 10px;
+}
+.founder-photo {
+    display: block;
+    margin: 20px auto;
+    max-width: 20%;
+    height: auto;
+    border-radius: 10px;
+}
+.thumbnail {
+    display: block;
+    margin: 20px auto;
+    max-width: 500%;
+    height: auto;
+    border-radius: 10px;
+}
+.ninja-cat a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #666;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.ninja-cat a:hover {
+    background-color: #777;
+}
+.alkherm-online a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #666;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.alkherm-online a:hover {
+    background-color: #777;
+}
