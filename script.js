@@ -25,11 +25,11 @@ window.onload = function() {
         });
     }
 
-    // Step 3: Function to load 'about.html' content
+    // Step 3: Function to load 'gome.html' content
     function loadContent() {
-        // Use XMLHttpRequest to fetch 'about.html'
+        // Use XMLHttpRequest to fetch 'home.html'
         const xhr = new XMLHttpRequest();
-        xhr.open('GET', 'about.html', true);
+        xhr.open('GET', 'home.html', true);
         xhr.onreadystatechange = function() {
             if (xhr.readyState === 4 && xhr.status === 200) {
                 // Replace the current content with the new content
