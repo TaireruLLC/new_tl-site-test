@@ -12,14 +12,14 @@
  * from Taireru LLC.
  */
 body {
-    background-color: #1c1c1c;
+    background-color: #333;
     color: #f0f0f0;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 header {
-    background-color: #333;
+    background-color: #1c1c1c;
     padding: 20px;
     text-align: center;
 }
